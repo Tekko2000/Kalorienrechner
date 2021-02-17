@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorienrechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div>
+            <form action="">
+                <h1>KALORIENRECHNER</h1>
+                <label for="">Körpergröße</label>
+                <br>
+                <input type="number" id="bodySize" placeholder="Bitte geben Sie Ihre Größe in cm an">
+                <br>
+                <label for="">Alter</label>
+                <br>
+                <input type="number" name="" id="userAge" placeholder="Bitte geben Sie Alter an">
+                <br>
+                <label for="">Gewicht</label>
+                <br>
+                <input type="number" name="" id="userWeight" placeholder="Bitte geben Sie Ihr Gewicht in kg an">
+                <br>
+                <label for="">Geschlecht</label>
+                <br>
+                <input type="radio" id="female" name="gender" onchange="berechne()"><label for="">weiblich</label>
+                <br>
+                <input type="radio" name="gender" id="male" onchange="berechne()"><label for="">männlich</label>
+                <br>
+                <div>
+                    <label for="">Arbeits- und Freizeitaktivität</label>
+                    <br>
+                    <select name="belastung" id="palFactor">
+                        <option value="sleep">im Schlaf</option>
+                        <option value="sit">nur sitzend oder liegenend</option>
+                        <option value="office">ausschließlich sitzende Tätigkeit</option>
+                        <option value="work">sitzende Tätigkeit</option>
+                        <option value="mechanic">gehende oder stehende Tätigkeit</option>
+                        <option value="worker">körperlich anstrengende Arbeit</option>
+                    </select>
+                </div>
+                <br>
+                <input type="button" value="Berechne" id="rechnen" onclick="berechne()">
+            </form>
+            <h3>Grundumsatz: <span id="grund"></span></h3>
+            <h3>Gesamtumsatz: <span id="gesamt"></span></h3>
+        </div>
+        <p>Das Ergebnis sollten Sie als Orientierungswert ansehen, da es verschiedene Fehlermögichkeiten gibt wie
+            abweichender Grundumsatz, falsche Zeiteinschätzung etc.</p>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

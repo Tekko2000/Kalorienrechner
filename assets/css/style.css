@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+}
+section{
+    padding: 0 25px;
+    font-family:'Roboto';
+    width:425px;
+    margin:5% auto;
+    text-align:center;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: rgb(174,196,220);
+}
+#bodySize{
+    width:375px;
+    padding:2px 0;
+    margin:5px 0;
+}
+#userAge{
+    width:375px;
+    padding: 2px 0;
+    margin: 5px 0;
+}
+#userWeight{
+    width:375px;
+    padding:2px 0;
+    margin:5px 0;
+}
+p{
+    font-size:15px;
+    text-align: left;
+}
+input{
+    outline: none;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+select{
+    outline:none;
+    margin: 10px 0;
+}
+#rechnen{
+    width:150px;
+    padding:2px 0;
+    background-color:rgba(0,0,0,0.1);
+    border-radius:6px;
+    color:white;
+}
+label{
+    font-size:20px;
+}
+
+
+
